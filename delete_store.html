@@ -1,0 +1,20 @@
+<doctype html>
+<title>Delete Record - Flask Shopping List Database</title>
+     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<h2 style="color:red;">Are you sure to delete this record?</h2>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.item) }}
+        {{ render_field(form.price) }}
+        {{ render_field(form.quantity) }}
+        {{ render_field(form.store_name) }}
+        {{ render_field(form.address) }}
+        {{ render_field(form.date_to_purchase) }}
+        {{ render_field(form.note) }}
+    </dl>
+     <p><button type=submit value=Delete>Yes, delete this record</button>
+          <a href = "/">No, return to my shopping list</a>
+</form>
+</doctype>
