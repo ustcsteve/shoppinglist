@@ -1,8 +1,8 @@
-# A shoppinglist
+# My shopping list
 
 This is a SQLite3 and Flask based web app using Python3.
 
-It allows a user to create, read, update and delete (CRUD) his/her shopping list online.
+It allows me to create, read, update and delete (CRUD) my shopping list online.
 
 Below is the link to the list:
 
