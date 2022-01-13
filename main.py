@@ -49,7 +49,7 @@ def search_results(search):
         qry = db_session.query(Store)
         results = qry.order_by(Store.date_to_purchase).all()
     if not results:
-        flash('Invalid search input, no results found! Please input a valid search.')
+        flash('Invalid search input, no results found! Please input a valid search!')
         return redirect('/')
     else:
         # display results
